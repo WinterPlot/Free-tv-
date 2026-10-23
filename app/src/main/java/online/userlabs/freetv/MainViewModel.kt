@@ -30,7 +30,7 @@ class MainViewModel(app: Application) : AndroidViewModel(app) {
     init {
         viewModelScope.launch {
             try {
-                setChannels(repo.loadLocal())
+                applyChannels(repo.loadLocal())
             } catch (e: Exception) {
                 message = getApplication<Application>().getString(R.string.update_failed, e.message ?: "")
             } finally {
@@ -39,7 +39,7 @@ class MainViewModel(app: Application) : AndroidViewModel(app) {
         }
     }
 
-    private fun setChannels(list: List<Channel>) {
+    private fun applyChannels(list: List<Channel>) {
         channels = list
         groups = list.groupingBy { it.group }.eachCount().toSortedMap(String.CASE_INSENSITIVE_ORDER).toList()
         if (group != null && groups.none { it.first == group }) group = null
@@ -52,7 +52,7 @@ class MainViewModel(app: Application) : AndroidViewModel(app) {
             val app = getApplication<Application>()
             message = try {
                 val list = repo.refresh()
-                setChannels(list)
+                applyChannels(list)
                 app.getString(R.string.updated, list.size)
             } catch (e: Exception) {
                 app.getString(R.string.update_failed, e.message ?: e.toString())

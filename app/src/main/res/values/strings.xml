@@ -1,0 +1,23 @@
+<resources>
+    <string name="app_name">Free TV</string>
+    <string name="search_hint">Search channels</string>
+    <string name="favorites">Favorites</string>
+    <string name="refresh">Update channel list</string>
+    <string name="all_countries">All countries</string>
+    <string name="no_channels">No channels found</string>
+    <string name="no_favorites">No favorites yet. Tap the heart on a channel to add it.</string>
+    <string name="loading">Loading channels…</string>
+    <string name="updated">Channel list updated (%d channels)</string>
+    <string name="update_failed">Update failed: %s</string>
+    <string name="cant_play">Can\'t play this channel.\nIt may be offline or blocked in your country.</string>
+    <string name="open_external">Open in another app</string>
+    <string name="no_app">No app found to open this link</string>
+    <string name="geo_blocked">may be geo-blocked</string>
+    <string name="add_favorite">Add to favorites</string>
+    <string name="remove_favorite">Remove from favorites</string>
+    <string name="tab_channels">Channels</string>
+    <string name="subtitle">%1$d channels · live &amp; free</string>
+    <string name="opens_in_app">Opens in app</string>
+    <string name="geo">Geo</string>
+    <string name="back">Back</string>
+</resources>

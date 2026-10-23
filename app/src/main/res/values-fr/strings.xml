@@ -1,0 +1,23 @@
+<resources>
+    <string name="app_name">Free TV</string>
+    <string name="search_hint">Rechercher une chaîne</string>
+    <string name="favorites">Favoris</string>
+    <string name="refresh">Mettre à jour la liste</string>
+    <string name="all_countries">Tous les pays</string>
+    <string name="no_channels">Aucune chaîne trouvée</string>
+    <string name="no_favorites">Aucun favori. Appuyez sur le cœur d\'une chaîne pour l\'ajouter.</string>
+    <string name="loading">Chargement des chaînes…</string>
+    <string name="updated">Liste mise à jour (%d chaînes)</string>
+    <string name="update_failed">Échec de la mise à jour : %s</string>
+    <string name="cant_play">Impossible de lire cette chaîne.\nElle est peut-être hors ligne ou bloquée dans votre pays.</string>
+    <string name="open_external">Ouvrir dans une autre application</string>
+    <string name="no_app">Aucune application pour ouvrir ce lien</string>
+    <string name="geo_blocked">peut être bloquée géographiquement</string>
+    <string name="add_favorite">Ajouter aux favoris</string>
+    <string name="remove_favorite">Retirer des favoris</string>
+    <string name="tab_channels">Chaînes</string>
+    <string name="subtitle">%1$d chaînes · en direct &amp; gratuites</string>
+    <string name="opens_in_app">S\'ouvre dans l\'appli</string>
+    <string name="geo">Géo</string>
+    <string name="back">Retour</string>
+</resources>
